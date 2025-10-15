@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition and animation</title>
+</head>
+<style>
+    p {
+        width: 300px;
+        margin: 100px auto;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 20px;
+        transition: background-color 0.5s ease, transform 0.5s ease;
+    }
+    /* .box{
+        height: 500px;
+        width: 500px;
+        border: 2px solid black;
+        background: green;
+        animation: beat 2s infinite reverse;
+    } */
+
+    /* @keyframes beat {
+        0% {
+            transform: scale(1);
+            background-color: green;
+        }
+        50%{
+            transform: scale(1.5);
+            background-color: yellow;
+        }
+        100% {
+            transform: scale(1);
+            background-color: green;
+        }
+    } */
+
+    p:hover {
+        color: black;
+        background-color: red;
+        transform: scale(1.1);
+    }
+
+    .box{
+        height: 500px;
+        width: 500px;
+        border: 2px solid black;
+        background: green;
+        animation:move  2s infinite alternate ease-in-out;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateX(0);
+            background-color: green;
+        }
+        50%{
+            transform: translateX(1200px);
+            background-color: yellow;
+        }
+        100% {
+            transform: translateX(0);
+            background-color: green;
+        }
+    }
+
+
+</style>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusantium
+        molestias magnam officia numquam asperiores exercitationem natus ipsam
+        quam dolor animi alias eius commodi doloribus, quae magni amet placeat ab.
+    </p>
+    <!-- <div class="box">
+
+    </div> -->
+    
+    <div class="box">
+
+    </div>
+
+</body>
+
+</html>
